@@ -57,6 +57,8 @@ private extension LEDBoardViewController {
             button.layer.borderColor = UIColor.black.cgColor
             button.layer.borderWidth = 1.0
         }
+        resultLabel.font = .systemFont(ofSize: 100)
+        resultLabel.adjustsFontSizeToFitWidth = true
     }
 
     func updateResultLabel(_ text: String) {
