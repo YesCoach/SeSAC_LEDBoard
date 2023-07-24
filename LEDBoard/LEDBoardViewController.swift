@@ -15,6 +15,11 @@ class LEDBoardViewController: UIViewController {
     @IBOutlet var colorChangeButton: UIButton!
     @IBOutlet var resultLabel: UILabel!
 
+    private let colorList: [UIColor] = [
+        UIColor.red, UIColor.green, UIColor.blue, UIColor.systemMint,
+        UIColor.orange, UIColor.purple, UIColor.systemPink, UIColor.yellow
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,6 +29,13 @@ class LEDBoardViewController: UIViewController {
     @IBAction func didSendButtonTouched(_ sender: UIButton) {
         view.endEditing(true)
         updateResultLabel(userInputTextField.text!)
+    }
+    @IBAction func didColorButtonTouched(_ sender: UIButton) {
+        view.endEditing(true)
+        if let randomColor = colorList.randomElement() {
+            colorChangeButton.setTitleColor(randomColor, for: .normal)
+            resultLabel.textColor = randomColor
+        }
     }
 
     @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {

@@ -53,6 +53,9 @@
                                                 <state key="normal" title="Aa">
                                                     <color key="titleColor" systemColor="systemRedColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didColorButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46B-Sg-yGO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
