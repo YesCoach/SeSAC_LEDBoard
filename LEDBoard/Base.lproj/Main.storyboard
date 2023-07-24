@@ -40,6 +40,9 @@
                                                 <state key="normal" title="보내기">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didSendButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aIz-Wr-Dj3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7P-R9-iCA">
                                                 <rect key="frame" x="297" y="0.0" width="40" height="30"/>
@@ -86,6 +89,7 @@
                     </view>
                     <connections>
                         <outlet property="colorChangeButton" destination="E7P-R9-iCA" id="oYw-iE-wGW"/>
+                        <outlet property="resultLabel" destination="cMY-tP-Gvv" id="a4v-GP-8mz"/>
                         <outlet property="sendButton" destination="X99-Vg-j2r" id="V8k-ol-4d8"/>
                         <outlet property="topInputView" destination="3Kk-WL-pAG" id="MFh-wI-JD5"/>
                         <outlet property="userInputTextField" destination="cXU-rL-T0a" id="9XV-9L-7Ok"/>

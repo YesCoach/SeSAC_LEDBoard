@@ -13,6 +13,7 @@ class LEDBoardViewController: UIViewController {
     @IBOutlet var userInputTextField: UITextField!
     @IBOutlet var sendButton: UIButton!
     @IBOutlet var colorChangeButton: UIButton!
+    @IBOutlet var resultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,22 @@ class LEDBoardViewController: UIViewController {
 
         configureUI()
     }
+    @IBAction func didSendButtonTouched(_ sender: UIButton) {
+        view.endEditing(true)
+        updateResultLabel(userInputTextField.text!)
+    }
 
+    @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+
+    @IBAction func didTextFieldExited(_ sender: UITextField) {
+        print(#function)
+        updateResultLabel(sender.text!)
+    }
+}
+
+private extension LEDBoardViewController {
     func configureUI() {
         userInputTextField.enablesReturnKeyAutomatically = true
 
@@ -36,12 +52,8 @@ class LEDBoardViewController: UIViewController {
         }
     }
 
-    @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {
-        userInputTextField.isHidden.toggle()
+    func updateResultLabel(_ text: String) {
+        resultLabel.text = text
     }
-    @IBAction func didTextFieldExited(_ sender: UITextField) {
-        print(#function)
-    }
-
 }
 
