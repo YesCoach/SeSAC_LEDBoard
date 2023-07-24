@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		89F439D52A67F0CB00791222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F439D42A67F0CB00791222 /* AppDelegate.swift */; };
 		89F439D72A67F0CB00791222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F439D62A67F0CB00791222 /* SceneDelegate.swift */; };
-		89F439D92A67F0CB00791222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F439D82A67F0CB00791222 /* ViewController.swift */; };
+		89F439D92A67F0CB00791222 /* LEDBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F439D82A67F0CB00791222 /* LEDBoardViewController.swift */; };
 		89F439DC2A67F0CB00791222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F439DA2A67F0CB00791222 /* Main.storyboard */; };
 		89F439DE2A67F0CE00791222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F439DD2A67F0CE00791222 /* Assets.xcassets */; };
 		89F439E12A67F0CE00791222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F439DF2A67F0CE00791222 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		89F439D12A67F0CB00791222 /* LEDBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F439D42A67F0CB00791222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F439D62A67F0CB00791222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89F439D82A67F0CB00791222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89F439D82A67F0CB00791222 /* LEDBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardViewController.swift; sourceTree = "<group>"; };
 		89F439DB2A67F0CB00791222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F439DD2A67F0CE00791222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F439E02A67F0CE00791222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				89F439D42A67F0CB00791222 /* AppDelegate.swift */,
 				89F439D62A67F0CB00791222 /* SceneDelegate.swift */,
-				89F439D82A67F0CB00791222 /* ViewController.swift */,
+				89F439D82A67F0CB00791222 /* LEDBoardViewController.swift */,
 				89F439DA2A67F0CB00791222 /* Main.storyboard */,
 				89F439DD2A67F0CE00791222 /* Assets.xcassets */,
 				89F439DF2A67F0CE00791222 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F439D92A67F0CB00791222 /* ViewController.swift in Sources */,
+				89F439D92A67F0CB00791222 /* LEDBoardViewController.swift in Sources */,
 				89F439D52A67F0CB00791222 /* AppDelegate.swift in Sources */,
 				89F439D72A67F0CB00791222 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +295,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
