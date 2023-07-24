@@ -37,6 +37,7 @@ class LEDBoardViewController: UIViewController {
 
     @IBAction func didBackgroundTouched(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+        topInputView.isHidden.toggle()
     }
 
     @IBAction func didTextFieldExited(_ sender: UITextField) {
