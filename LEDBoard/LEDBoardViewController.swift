@@ -48,7 +48,6 @@ class LEDBoardViewController: UIViewController {
 
 private extension LEDBoardViewController {
     func configureUI() {
-        userInputTextField.enablesReturnKeyAutomatically = true
         topInputView.layer.cornerRadius = 5.0
         [
             sendButton, colorChangeButton

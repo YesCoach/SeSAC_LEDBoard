@@ -68,8 +68,8 @@
                                     <constraint firstAttribute="bottom" secondItem="Qhy-L0-g0O" secondAttribute="bottom" constant="8" id="QuG-ZT-eEA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMY-tP-Gvv">
-                                <rect key="frame" x="20" y="165" width="353" height="52.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="cMY-tP-Gvv">
+                                <rect key="frame" x="20" y="185" width="353" height="52.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,12 +79,12 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="cMY-tP-Gvv" firstAttribute="top" secondItem="3Kk-WL-pAG" secondAttribute="bottom" constant="40" id="CKT-aq-Jkv"/>
+                            <constraint firstItem="cMY-tP-Gvv" firstAttribute="top" secondItem="3Kk-WL-pAG" secondAttribute="bottom" constant="60" id="CKT-aq-Jkv"/>
                             <constraint firstItem="3Kk-WL-pAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DK7-Ht-9Xm"/>
-                            <constraint firstItem="cMY-tP-Gvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F3j-HB-xSk"/>
+                            <constraint firstItem="cMY-tP-Gvv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F3j-HB-xSk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Kk-WL-pAG" secondAttribute="trailing" constant="20" id="J2c-qV-IIU"/>
                             <constraint firstItem="3Kk-WL-pAG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bsA-4g-UMV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMY-tP-Gvv" secondAttribute="trailing" constant="20" id="f8i-jo-qWn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="cMY-tP-Gvv" secondAttribute="trailing" constant="20" id="f8i-jo-qWn"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="oia-xx-bb9" appends="YES" id="goC-I2-8rC"/>
