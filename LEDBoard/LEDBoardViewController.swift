@@ -15,24 +15,21 @@ class LEDBoardViewController: UIViewController {
     @IBOutlet var colorChangeButton: UIButton!
     @IBOutlet var resultLabel: UILabel!
 
-    private let colorList: [UIColor] = [
-        UIColor.red, UIColor.green, UIColor.blue, UIColor.systemMint,
-        UIColor.orange, UIColor.purple, UIColor.systemPink, UIColor.yellow
-    ]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
         configureUI()
+        updateResultLabel(userInputTextField.text!)
     }
+
     @IBAction func didSendButtonTouched(_ sender: UIButton) {
         view.endEditing(true)
         updateResultLabel(userInputTextField.text!)
     }
+
     @IBAction func didColorButtonTouched(_ sender: UIButton) {
         view.endEditing(true)
-        if let randomColor = colorList.randomElement() {
+        if let randomColor = UIColor.randomColor {
             colorChangeButton.setTitleColor(randomColor, for: .normal)
             resultLabel.textColor = randomColor
         }
@@ -51,9 +48,7 @@ class LEDBoardViewController: UIViewController {
 private extension LEDBoardViewController {
     func configureUI() {
         userInputTextField.enablesReturnKeyAutomatically = true
-
         topInputView.layer.cornerRadius = 5.0
-
         [
             sendButton, colorChangeButton
         ].forEach {
@@ -65,7 +60,7 @@ private extension LEDBoardViewController {
     }
 
     func updateResultLabel(_ text: String) {
-        resultLabel.text = text
+        let nonWhitespacesText = text.trimmingCharacters(in: .whitespaces)
+        resultLabel.text = nonWhitespacesText.isEmpty ? "Empty" : nonWhitespacesText
     }
 }
-
